@@ -4,5 +4,15 @@ console.log('js');
 $(document).ready(start);
 
 function start(){
-  console.log('jQuery');
-}
+  $('#generateBtn').on('click', addDiv);
+
+
+}//end start
+
+
+function addDiv(){
+  console.log('clicked generate');
+  $('#body').append('<div>');
+
+
+}//end addDiv
