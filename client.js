@@ -15,8 +15,8 @@ function start(){
 
 function addDiv(){
 
-  $('#body').append('<div>');
-  $('#body').last('div').append('<p>'+ totalClicks +'</p>');
+  $('#body').append('<div class="generateRed">');
+  $('.generateRed').last().append('<p>'+ totalClicks +'</p>');
   $('#body').last('div').append('<button id="swapBtn">Swap</button><button id="deleteBtn">Delete</button>');
   totalClicks = totalClicks +=1;
 
