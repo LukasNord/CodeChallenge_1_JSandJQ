@@ -14,7 +14,7 @@ function addDiv(){
   $('#body').append('<div class="red">');
   $('.red').last().append('<p>'+ totalClicks +'</p>');
   $('.red').last().append('<button id="swapBtn">Swap</button><button id="deleteBtn">Delete</button>');
-  totalClicks = totalClicks +=1;
+  totalClicks = totalClicks +=1; //I noticed that totalClicks++ didn't work here- not sure why.
 }//end addDiv
 function swapColor(){
   console.log('swap color works');
